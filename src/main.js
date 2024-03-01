@@ -18,7 +18,7 @@ $buttons.forEach(($button) => {
 
     if (value === "=") {
       const express = $display.value.replace(/x/g, "*");
-      $display.value = eval(express).toFixed(3 );
+      $display.value = Math.round(eval(express) * 1000) / 1000;
       return;
     }
 
