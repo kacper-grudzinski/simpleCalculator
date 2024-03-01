@@ -1,7 +1,7 @@
 const $display = document.querySelector('input[type="text"]');
-const buttons = document.querySelectorAll('input[type="button"]');
+const $buttons = document.querySelectorAll('input[type="button"]');
 
-$button.forEach(($button) => {
+$buttons.forEach(($button) => {
     $button.addEventListener('click', () => {
         const value = $button.value;
 
@@ -11,7 +11,7 @@ $button.forEach(($button) => {
         }
 
         if(value === '=') {
-            const express = $display.value.
+            const express = $display.value.replace(/x/g, '*');
             $display.value = eval(express);
             return
         }

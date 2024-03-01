@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors ring-1 ring-gray-700 shadow-inner shadow-gray-700
+    }
+}
