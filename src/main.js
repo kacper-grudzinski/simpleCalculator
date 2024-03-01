@@ -18,7 +18,7 @@ $buttons.forEach(($button) => {
 
     if (value === "=") {
       const express = $display.value.replace(/x/g, "*");
-      $display.value = eval(express);
+      $display.value = eval(express).toFixed(3 );
       return;
     }
 
@@ -43,3 +43,4 @@ $buttons.forEach(($button) => {
     } 
   });
 });
+
