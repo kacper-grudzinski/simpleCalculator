@@ -4,6 +4,7 @@ const $buttons = document.querySelectorAll('input[type="button"]');
 $buttons.forEach(($button) => {
     $button.addEventListener('click', () => {
         const value = $button.value;
+        
         if($display.value == '' && value == '0'){
             $display.value = '';
             return
