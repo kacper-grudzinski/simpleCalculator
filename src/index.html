@@ -12,43 +12,126 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-kodeMono tracking-tight">
-    <main>
-      <form>
-        <header>
-          <hr />
-          <hr />
-          <h1>Najlepszy kalkulator</h1>
-          <input type="text" placeholder="0000000000000000" disabled />
-          <hr />
+  <body class="font-kodeMono bg-gray-400">
+    <main class="flex justify-center items-center min-h-screen p-4">
+      <form
+        class="bg-gradient-to-bl from-zinc-700 to-zinc-800 p-5 rounded-xl max-w-MyW shadow-md shadow-gray-800 "
+      >
+        <header class="flex flex-col mb-10 mt-6">
+          <div class="flex gap-1 flex-col">
+            <hr />
+            <hr />
+          </div>
+
+          <h1
+            class="text-2xl my-4 font-bold text-white duration-150 transition-colors mb-6"
+          >
+            Najlepszy kalkulator
+          </h1>
+          <input
+            class="display--js bg-gradient-to-bl from-sky-300 to-cyan-700/60 h-12 mb-4 rounded-md text-center font-medium text-2xl placeholder:text-white"
+            type="text"
+            placeholder="0000000000000000"
+            disabled
+          />
+          <div class="flex gap-1 flex-col">
+            <hr />
+            <hr />
+          </div>
         </header>
-        <section>
-          <div>
-            <input type="button" value="7" />
-            <input type="button" value="8" />
-            <input type="button" value="9" />
-            <input type="button" value="+" />
+        <section class="flex gap-2 flex-col">
+          <div class="text-white text-xl font-bold grid grid-cols-4 gap-2">
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="7"
+            />
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="8"
+            />
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="9"
+            />
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="+"
+            />
           </div>
-          <div>
-            <input type="button" value="4" />
-            <input type="button" value="5" />
-            <input type="button" value="6" />
-            <input type="button" value="-" />
+          <div class="text-white text-xl font-bold grid grid-cols-4 gap-2">
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="4"
+            />
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="5"
+            />
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="6"
+            />
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="-"
+            />
           </div>
-          <div>
-            <input type="button" value="1" />
-            <input type="button" value="2" />
-            <input type="button" value="3" />
-            <input type="button" value="x" />
+          <div class="text-white text-xl font-bold grid grid-cols-4 gap-2">
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="1"
+            />
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="2"
+            />
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="3"
+            />
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="x"
+            />
           </div>
-          <div>
-            <input type="button" value="0" />
-            <input type="button" value="C" />
-            <input type="button" value="=" />
-            <input type="button" value="/" />
+          <div class="text-white text-xl font-bold grid grid-cols-4 gap-2">
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="0"
+            />
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="C"
+            />
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="="
+            />
+            <input
+              class="button--js bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors"
+              type="button"
+              value="/"
+            />
           </div>
         </section>
       </form>
     </main>
+		<script defer src="main.js" type="module"></script>
+  </body>
   </body>
 </html>

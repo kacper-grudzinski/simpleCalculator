@@ -7,6 +7,10 @@ module.exports = {
     extend: {
       fontFamily:{
         kodeMono: ["Kode Mono", "monospace"]
+      },
+
+      maxWidth:{
+        MyW: "22.5rem"
       }
     },
   },
