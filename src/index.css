@@ -4,10 +4,10 @@
 
 @layer components {
     .btn {
-        @apply touch-manipulation bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors ring-1 ring-gray-700 shadow-inner shadow-gray-700 focus:outline-none focus:ring-sky-300 focus:ring-2       
+        @apply touch-manipulation bg-gray-600 rounded-full h-12 hover:bg-gray-700 duration-150 transition-colors ring-1 ring-gray-700 shadow-inner shadow-gray-700     
     }
 
     .special-btn {
-        @apply touch-manipulation bg-gradient-to-bl from-zinc-700 to-zinc-800 p-2 rounded-xl shadow-sm shadow-gray-800 border-gray-800 border-2 hover:scale-105 transition-transform duration-150 focus:outline-none focus:ring-sky-300 focus:ring-2  
+        @apply touch-manipulation bg-gradient-to-bl from-zinc-700 to-zinc-800 p-2 rounded-xl shadow-sm shadow-gray-800 border-gray-800 border-2 hover:scale-105 transition-transform duration-150 
     }
 }
