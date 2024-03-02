@@ -6,7 +6,7 @@ $buttons.forEach(($button) => {
     const value = $button.value;
     let len = $display.value.length;
 
-    if ($display.value == "" && value == "0") {
+    if ($display.value == "" && value == "0" || $display.value == "" && value === "x" || $display.value == "" && value === "/" || $display.value == "" && value === "=") {
       $display.value = "";
       return;
     }
