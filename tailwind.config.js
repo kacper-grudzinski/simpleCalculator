@@ -11,7 +11,10 @@ module.exports = {
 
       maxWidth:{
         MyW: "22.5rem"
-      }
+      },
+      width:{
+        MyW: "22.5rem"
+      },
     },
   },
   plugins: [],

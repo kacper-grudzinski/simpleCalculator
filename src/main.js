@@ -1,7 +1,19 @@
 const $display = document.querySelector('input[type="text"]');
 const $buttons = document.querySelectorAll('input[type="button"]');
+const saveBtn = document.querySelector('.save--js');
+const loadBtn = document.querySelector('.load--js');
 
-$buttons.forEach(($button) => {
+saveBtn.addEventListener('click', () => {
+  localStorage.setItem('text', $display.value);
+  $display.value = "";
+});
+
+loadBtn.addEventListener('click', ()=> {
+  $display.value = localStorage.getItem('text');
+});
+
+
+const calculate = $buttons.forEach(($button) => {
   $button.addEventListener("click", () => {
     const value = $button.value;
     let len = $display.value.length;
